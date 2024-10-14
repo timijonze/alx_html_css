@@ -13,5 +13,3 @@ Fork this repository by clicking on the 'Fork' button on the top right of the pa
 Clone the forked repository using 'git clone (url)'
 Add code, and if it should be tested, add tests
 Update the documentation
-Make sure the test suite is valid and code lints
-Issue pull request
