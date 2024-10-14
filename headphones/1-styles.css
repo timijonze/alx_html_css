@@ -1,0 +1,243 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav{
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.header{
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    margin-left: 40px;
+}
+
+.nav-links a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Source-Sans-Pro';
+    font-weight: bold;
+    font-size: 12px;
+}
+.logo{
+    margin-right: auto; 
+    }
+
+.logo img{
+    width: 161px;
+    height: 32px;
+}
+
+/* section */
+
+.hero{
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    font-family: 'Source-Sans-Pro';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.hero-bottom-container h2{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Source-Sans-Pro';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.span-container{
+    display: flex;
+    justify-content: center;
+    font-family: 'Source-Sans-Pro';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 22px;
+    line-height: 24px;
+    box-shadow: 0px 2px 20px 0px #00000080;
+    width: 162px;
+    height: 44px;
+    white-space: nowrap;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Source-Sans-Pro';
+}
+
+/* what we do section */
+
+.company-info{
+    text-align: center;
+    margin: var;
+}
+
+.company-info h2{
+    font-family: 'Source-Sans-Pro';
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.information-container{
+    font-family: 'Source-Sans-Pro';
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    width: 637px;
+    height: 104px;
+    display: flex;
+    text-align: center;
+    margin-left: 330px;
+}
+
+.info-content{
+     border: none;
+     border-radius: 8px;
+     padding: 5px;
+     margin: 10px;
+     transition: transform 0.3s;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 1000px;
+     text-align: center;
+     justify-content: center;
+     font-size: 14px;
+     font-family:'Source-Sans-Pro';
+}
+
+.info-content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+}
+
+.info-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-direction: row; 
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-title h1 {
+        font-size: 24px;
+        margin-top: 100px;
+    }
+
+    .hero-bottom-container h2 {
+        font-size: 14px;
+        margin-top: 100px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .span-container {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .information-container {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .info-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
